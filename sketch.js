@@ -79,7 +79,7 @@ function setup() {
     
     this.button = createButton(' 🚕PLAY ');
     this.button.position(670,300);
-    this.button.size(10);/////////////////////
+    this.button.size(10,10////////////////////
 
   
   }
@@ -108,7 +108,7 @@ Barrelgroup.collide(roadblockgroup);
     camera.position.x = displayWidth / 2;
     camera.position.y = car1.y-10;
 
-    background("blue");
+    background("#4a4747");
     image(trackimg,10,-displayHeight * 5-20, displayWidth,displayHeight * 10);
 
     if(car1.isTouching(Barrelgroup) ){
@@ -171,7 +171,7 @@ Barrelgroup.collide(roadblockgroup);
    }
    
   
- if (camera.position.y<-3760) {
+ if (camera.position.y<-3700) {
    obs1.destroy();
    obs2.destroy();
     setTimeout(function(){ gameState=2; },900);
@@ -180,9 +180,9 @@ Barrelgroup.collide(roadblockgroup);
 
 drawSprites();
 
-fill("orange");
+fill("red");
 textSize(25);
-text("HEALTH : " + health, camera.position.x-650,camera.position.y-270);
+text("HEALTH : " + health, camera.position.x-650,camera.position.y-350);
 }
 
 
