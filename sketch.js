@@ -57,28 +57,29 @@ function setup() {
     this.Name.position(600, 150);
 
     textStyle(BOLDITALIC);
-    textSize(15)
+    textSize(20)
     fill("black");
     text("=> Some Important Instructions:",350,400);
 
-    textSize(12)
+    textSize(15)
     fill("BLACK");
     text("GOAL:",350,350);
 
-    textSize(12)
+    textSize(15)
     fill("green");
     text(" REACH END LINE⛳.",350,370);
 
-    textSize(12)
+    textSize(15)
     fill("green");
     text("(1) PLAY IN FULLSCREEN SIZE FOR BETTER EXPERIENCE.",400,420);
     
-    textSize(12)
+    textSize(15)
     fill("green");
     text("(2) CONTROL CAR USING ARROW KEYS ALSO 'H' FOR HORN.",400,440); 
     
     this.button = createButton(' 🚕PLAY ');
     this.button.position(670,300);
+    this.button.size(10);/////////////////////
 
   
   }
@@ -107,7 +108,7 @@ Barrelgroup.collide(roadblockgroup);
     camera.position.x = displayWidth / 2;
     camera.position.y = car1.y-10;
 
-    background("orange");
+    background("blue");
     image(trackimg,10,-displayHeight * 5-20, displayWidth,displayHeight * 10);
 
     if(car1.isTouching(Barrelgroup) ){
@@ -170,7 +171,7 @@ Barrelgroup.collide(roadblockgroup);
    }
    
   
- if (camera.position.y<-3660) {
+ if (camera.position.y<-3760) {
    obs1.destroy();
    obs2.destroy();
     setTimeout(function(){ gameState=2; },900);
@@ -180,8 +181,8 @@ Barrelgroup.collide(roadblockgroup);
 drawSprites();
 
 fill("orange");
-textSize(20);
-text("Health : " + health, camera.position.x-650,camera.position.y-300);
+textSize(25);
+text("HEALTH : " + health, camera.position.x-650,camera.position.y-270);
 }
 
 
