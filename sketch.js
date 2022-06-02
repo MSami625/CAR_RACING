@@ -27,7 +27,7 @@ function preload(){
 
 
 function setup() {
-  background("orange");
+  background("#4a4747");
   canvas=createCanvas(displayWidth,displayHeight);
 
   car1=createSprite(700,800);
@@ -52,7 +52,7 @@ function setup() {
     this.title.position(displayWidth/2 - 100, 50);
   
     var name = window.prompt("ENTER YOUR NAME:");
-     this.Name=createElement('h3');
+     this.Name=createElement('h6');
      this.Name.html("🎗WELCOME🎗 "+ name);
     this.Name.position(600, 150);
 
@@ -79,7 +79,7 @@ function setup() {
     
     this.button = createButton(' 🚕PLAY ');
     this.button.position(670,300);
-    this.button.size(10,10////////////////////
+    this.button.size(10,10);////////////////////
 
   
   }
@@ -174,7 +174,7 @@ Barrelgroup.collide(roadblockgroup);
  if (camera.position.y<-3700) {
    obs1.destroy();
    obs2.destroy();
-    setTimeout(function(){ gameState=2; },900);
+    setTimeout(function(){ gameState=2; },800);
    }
 
 
