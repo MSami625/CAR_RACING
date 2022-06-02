@@ -52,7 +52,7 @@ function setup() {
     this.title.position(displayWidth/2 - 100, 50);
   
     var name = window.prompt("ENTER YOUR NAME:");
-     this.Name=createElement('h6');
+     this.Name=createElement('h2');
      this.Name.html("🎗WELCOME🎗 "+ name);
     this.Name.position(600, 150);
 
@@ -79,7 +79,7 @@ function setup() {
     
     this.button = createButton(' 🚕PLAY ');
     this.button.position(670,300);
-    this.button.size(10,10);////////////////////
+    this.button.size(50,50);////////////////////
 
   
   }
@@ -171,7 +171,7 @@ Barrelgroup.collide(roadblockgroup);
    }
    
   
- if (camera.position.y<-3700) {
+ if (camera.position.y<-3660) {
    obs1.destroy();
    obs2.destroy();
     setTimeout(function(){ gameState=2; },800);
@@ -182,7 +182,7 @@ drawSprites();
 
 fill("red");
 textSize(25);
-text("HEALTH : " + health, camera.position.x-650,camera.position.y-350);
+text("HEALTH : " + health, camera.position.x-700,camera.position.y-350);
 }
 
 
